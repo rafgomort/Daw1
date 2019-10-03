@@ -1,0 +1,15 @@
+Proceso sin_titulo
+	//Dime un número
+	Definir a Como Entero
+	Escribir "Dime un número"
+	Leer a
+	Si a>0 Entonces 
+		Escribir "Positivo"
+	Sino 
+		Si a<0 Entonces
+			Escribir "Negativo"
+		SiNo
+			Escribir "Cero"
+		FinSi
+	FinSi
+FinProceso

@@ -1,0 +1,29 @@
+Proceso sin_titulo
+	//Crea una versión ampliada del ejercicio 9.2, en la que se muestren también los valores mayores que la media.
+	Definir num,i,suma como entero
+	Definir media como real
+	
+	suma=0
+	
+	Dimension num[5]
+	
+	Escribir "Dame cinco numeros"
+	
+	Para i=1 hasta 5 con paso 1 hacer  
+		leer num[i]
+	FinPara
+	
+	Para i=1 hasta 5 con paso 1 hacer
+		suma=num[i]+suma
+	FinPara
+	
+	media= suma/5
+	
+	Escribir "La media es " media
+	
+	Para i=1 hasta 5 con paso 1 hacer
+		Si num[i]> media entonces
+			Escribir num[i] " Mayor que la media "
+		FinSi
+	FinPara
+FinProceso

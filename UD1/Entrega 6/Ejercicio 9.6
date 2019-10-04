@@ -1,0 +1,26 @@
+Proceso sin_titulo
+	//Crea un programa que pida al usuario dos bloques de 10 números cada uno (usando un array de dos dimensiones).
+	//Después deberá mostrar el mayor dato que se ha introducido en cada uno de esos dos bloques.
+	Definir a,i,j,maxi, maxj como entero
+	
+	Dimension a[2,10]
+	
+	Para i=1 hasta 2 con paso 1 hacer
+		Para j=1 hasta 10 con paso 1 hacer
+			Leer a[i,j]
+		FinPara
+	FinPara
+	Para i=1 hasta 2 con paso 1 hacer
+		Para j=1 hasta 10 con paso 1 Hacer
+			Si i=1 y a[i,j]>maxi
+				maxi=a[i,j]
+			FinSi
+			Si i=2 y a[i,j]>maxj
+				maxj=a[i,j]
+			FinSi
+		FinPara
+	FinPara
+	Escribir "El numero mayor es " maxi
+	Escribir "El mumero mayor es " maxj
+	
+FinProceso

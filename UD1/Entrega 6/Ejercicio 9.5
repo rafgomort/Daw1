@@ -1,0 +1,24 @@
+Proceso sin_titulo
+	// Haz un programa que pida al usuario 7 números enteros y calcule (y muestre) cuál es el mayor de ellos. 
+	//Nota: para calcular el mayor valor de una matriz, hay que comparar cada uno de los valores que tiene 
+	//almacenados con el que hasta ese momento es el máximo provisional. El valor inicial de este máximo 
+	//provisional no debería ser cero (porque el resultado sería incorrecto si todos los números son negativos), sino el primer elemento de la matriz.
+	Definir a,i, suma como entero
+	
+	Dimension a[7]
+	
+	Para i=1 hasta 7 con paso 1 hacer
+		escribir "dame valor"
+		Leer a[i]
+	FinPara
+	
+	suma= a[1]
+	
+	Para i=1 hasta 7 con paso 1 hacer
+		Si a[i]> suma entonces
+			suma=a[i]
+		FinSi
+	FinPara
+	escribir "El número mayor es " suma
+	
+FinProceso

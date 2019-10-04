@@ -1,0 +1,18 @@
+Proceso sin_titulo
+	//Crea un programa que pida una frase al usuario y diga cuántas palabras contiene 
+    //(pista: puedes contar los espacios, prestando atención en que no estén repetidos)
+	Definir frase Como Caracter
+	Definir a, x, contador como entero
+	Escribir "Dime una frase "
+	Leer frase
+	contador=0
+	
+	Para x=0 hasta longitud(frase)-1 con paso 1 hacer 
+		
+		Si Subcadena(frase, x, x) = " " Entonces
+			contador=contador+1
+		FinSi
+		
+	FinPara
+	Escribir contador+1
+FinProceso

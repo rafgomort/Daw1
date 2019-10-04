@@ -1,0 +1,16 @@
+Proceso sin_titulo
+	//Crea un programa que pida su nombre al usuario y lo escriba alternando letras mayúsculas y minúsculas 
+	//(por ejemplo, "nAcho" se mostraría como "NaChO".
+	Definir nombre Como Caracter
+	Definir x como entero
+	Escribir "Dime tu nombre"
+	Leer nombre
+	
+	Para x=0 hasta longitud(nombre)-1 con paso 1 Hacer
+		Si x%2=1
+			Escribir sin saltar  Mayusculas(Subcadena(nombre,x,x))
+		SiNo
+			Escribir sin saltar Minusculas(Subcadena(nombre,x,x))
+		FinSi
+	FinPara
+FinProceso

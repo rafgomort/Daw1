@@ -1,0 +1,23 @@
+Proceso Numero
+	//Crea un programa que pida dos números enteros al usuario y diga si alguno de ellos es múltiplo del otro. 
+	//Crea una función EsMultiplo que te ayude a que el proceso principal sea legible.
+	
+	Definir num1,num2 como entero
+	leer num1, num2
+	
+	Si EsMultiplo(num1,num2)
+		Escribir num1, " es multiplo de ",num2
+	SiNo
+		Si EsMultiplo(num2,num1)
+			Escribir num2, " es multiplo de ", num1
+		FinSi
+	Finsi
+FinProceso
+
+Subproceso res=EsMultiplo (num1, num2)
+	Si num1%num2==0 Entonces 
+		res=verdadero
+	SiNo
+		res=falso
+	FinSi
+FinSubProceso

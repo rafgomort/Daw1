@@ -1,0 +1,32 @@
+Proceso sin_titulo
+	//Crea un programa que genere un número al azar entre el 1 y el 100. El usuario tendrá 7 oportunidades para adivinarlo. 
+	//Tras cada intento, se le dirá si se ha pasado o se ha quedado corto.
+	Definir a,b, contador como entero
+	
+	a<-AZAR (101)
+	contador=0
+	
+	Escribir "Dame un numero "
+	Leer b
+	
+	Mientras (contador<7) y (b!=a)
+		Si b<a
+			Escribir "Te has quedado corto"
+		SiNo
+			Escribir "te has pasado " 
+		FinSi
+		contador=contador+1
+		Escribir "Este es el ", contador " intento de 7" 
+		
+		Escribir "Dame un numero" 
+		Leer b
+		
+	FinMientras
+	
+	Si b=a
+		Escribir "lo has adivinado"
+	SiNo
+		Escribir "No has acertado y te has quedado sin intentos"
+	FinSi
+	
+FinProceso
